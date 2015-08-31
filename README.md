@@ -6,19 +6,19 @@ Render Markdown files as web pages.
 Start
 ----
 
-+ Fork this project, or `npm install wo-markdown-blog`;
++ Fork [this project](https://github.com/LearnShare/wo-markdown-pages), or `npm install wo-markdown-blog`;
 + `npm install` and `bower install`.
 
 Write
 ----
 
-+ Put all article markdown file in dir 'src/articles/';
++ Put all article markdown files in dir 'src/articles/';
 + 'src/articles/readme.md' will show as main page(index).
 
 Release
 ----
 
-+ Run `gulp release`;
++ Run `gulp`;
 + The site will release to '_dist/'.
 
 Dev
