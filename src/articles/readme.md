@@ -1,24 +1,9 @@
-MAB index
+Wo-Markdown-Pages
 ====
 
-`Markdown` here!
+You can write [`Markdown`](https://github.com/LearnShare/Learning-Markdown) here.
 
-```js
-var hljs = require('highlight.js') // https://highlightjs.org/
+Posts
+----
 
-var md = require('markdown-it')({
-  highlight: function (str, lang) {
-    if (lang && hljs.getLanguage(lang)) {
-      try {
-        return hljs.highlight(lang, str).value;
-      } catch (__) {}
-    }
-
-    try {
-      return hljs.highlightAuto(str).value;
-    } catch (__) {}
-
-    return ''; // use external default escaping
-  }
-});
-```
++ [First Post](first-post.md)
