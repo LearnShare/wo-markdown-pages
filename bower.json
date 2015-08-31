@@ -1,0 +1,30 @@
+{
+  "name": "wo-markdown-pages",
+  "version": "1.0.0",
+  "description": "Render Markdown files as web pages.",
+  "keywords": [
+    "Markdown",
+    "Angular.js",
+    "Blog"
+  ],
+  "authors": [
+    "LearnShare"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-route": "~1.4.4",
+    "angular-sanitize": "~1.4.4",
+    "highlightjs": "~8.7.0",
+    "less": "~2.5.1",
+    "markdown-it": "~4.4.0",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
