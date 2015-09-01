@@ -186,8 +186,10 @@ function readContents(dirContents, parentDir) {
 function renderMd(mdPath, htmlPath) {
   try {
     var mdHTML = md.render(fs.readFileSync(mdPath, 'utf8'));
-    var contents = pageHtml.replace('<!--article-->', mdHTML);
-    // TODO: fix css path
+    var cssPath = path.relative(htmlPath, './_build/assets/main.css');
+    var contents = pageHtml
+        .replace('<!--article-->', mdHTML)
+        .replace('./assets/main.css', cssPath.substring(1));
 
     fs.outputFileSync(htmlPath, contents);
   } catch (e) {}
@@ -206,3 +208,6 @@ var tree = dirTree(articlesRootDir);
 var pageHtml = fs.readFileSync('./src/index.static.html', 'utf8');
 
 readContents(tree, articlesRootDir);
+
+copyFile('./_tmp/css/main.css', './_build/assets/main.css');
+copyFile('./src/favicon.ico', './_build/favicon.ico');
