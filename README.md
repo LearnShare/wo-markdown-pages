@@ -21,6 +21,9 @@ Release
 + Run `gulp`;
 + The site will release to '_dist/'.
 
++ Run `node build.js` or `iojs build.js` (should after `gulp`);
++ The static pages build to '_build/'.
+
 Dev
 ----
 
